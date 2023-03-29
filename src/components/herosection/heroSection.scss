@@ -1,0 +1,58 @@
+// .heroSection {
+//   max-width: 1200px;
+//   margin: auto;
+//   // background-color: #0a2640;
+//   &-division {
+//     padding: 0px 100px 56px;
+//     // overflow-x: hidden;
+
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     // gap: 93px;
+//     &__left {
+//       &-texts {
+//         > span {
+//           font-weight: 400;
+//           font-size: clamp(30px, 5vw, 48px);
+//           line-height: 72px;
+//           color: #ffffff;
+//           padding-bottom: 16px;
+//         }
+//         > p {
+//           font-weight: 400;
+//           font-size: 16px;
+//           line-height: 28px;
+//           color: #f1f1f1;
+//         }
+//       }
+
+//       &-buttons {
+//         padding-top: 40px;
+//         display: flex;
+//         gap: 24px;
+//         .buy-template {
+//           background: #65e4a3;
+//           border: 2px solid #69e6a6;
+//           border-radius: 56px;
+//           padding: 16px 56px;
+//         }
+//         .explore {
+//           padding: 16px 56px;
+//           border: 2px solid #ffffff;
+//           border-radius: 56px;
+//         }
+//       }
+//     }
+//     &__graphics {
+//       // > img {
+//       //   width: 493.86px;
+//       //   height: 423px;
+//       // }
+//       background-image: url(./../../assets/logo.png);
+//       background-size: cover;
+//       background-position: right;
+//       background-repeat: repeat;
+//     }
+//   }
+// }

@@ -1,0 +1,110 @@
+.navbar {
+  // background: #0a2640;
+  position: sticky;
+  top: 0;
+
+  &-container {
+    max-width: 1200px;
+    margin: auto;
+    &__wrappper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 56px 100px 64px;
+      @media screen and (max-width: 1024px) {
+        padding: 30px;
+      }
+      &-logo {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        > img {
+          width: 26px;
+          height: 33px;
+        }
+        p {
+          font-weight: 700;
+          font-size: 43.25px;
+          line-height: 34px;
+          color: white;
+        }
+      }
+      &-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @media screen and (max-width: 1024px) {
+          display: none;
+        }
+        .items {
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          color: #ffffff;
+          &:hover {
+            color: rgba(75, 15, 239, 0.74);
+          }
+        }
+        .primary-btn {
+          background: #ffffff;
+          border: 2px solid #ffffff;
+          border-radius: 24px;
+          padding: 8px 40px;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          cursor: pointer;
+          &:hover {
+            // background-color: red;
+            // border: none;
+            // transition: 0.3s ease-in-out;
+          }
+        }
+      }
+      &-hamburgurMenu {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+          display: block;
+        }
+
+        &_container {
+          position: absolute;
+          background-color: whitesmoke;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 90vh;
+          // padding: 30px;
+          &-links {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            padding: 40px;
+          }
+
+          .item {
+            text-decoration: none;
+          }
+          .primary-btn {
+            background: #ffffff;
+            border: 2px solid #ffffff;
+            border-radius: 24px;
+            padding: 8px 40px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            cursor: pointer;
+          }
+          .ri-closeline {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
