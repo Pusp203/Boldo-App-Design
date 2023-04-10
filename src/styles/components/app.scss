@@ -1,5 +1,19 @@
 .app {
   &__BannerWrapper {
     background: #0a2640;
+    // background-image: url(/src/assets/ellipse.svg);
+    // background-position: right;
+    // background-repeat: no-repeat;
+    // /* background-size: 623px 645px; */
+    // background-size: contain;
+    // &-logo {
+    //   background: linear-gradient(
+    //     90deg,
+    //     #0a2640 0%,
+    //     rgba(10, 38, 64, 0.109375) 31.6%,
+    //     rgba(10, 38, 64, 0) 72.89%,
+    //     #0a2640 97.87%
+    //   );
+    // }
   }
 }

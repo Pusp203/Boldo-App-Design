@@ -1,0 +1,110 @@
+.featured {
+  max-width: 1200px;
+  margin: auto;
+  &-body {
+    padding: 40px 0 72px 0;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    @media screen and (max-width: 1020px) {
+      padding: 32px 0 64px 0;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 80px;
+      flex-direction: column;
+      padding-left: 15px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 24px 0 48px 0;
+      flex-direction: column;
+      gap: 32px;
+    }
+    &_image {
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      > img {
+      }
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      &-main {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        &-headings {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          @media screen and (max-width: 768px) {
+            flex-direction: row;
+            gap: 8px;
+          }
+          @media screen and (max-width: 480px) {
+            flex-direction: column;
+            gap: 8px;
+          }
+          > h2 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 28px;
+
+            color: #0a2640;
+          }
+          > p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+
+            color: #777777;
+            @media screen and (max-width: 768px) {
+              font-size: 30px;
+              line-height: 40px;
+            }
+            @media screen and (max-width: 480px) {
+              font-size: 32px;
+              line-height: 48px;
+            }
+          }
+        }
+        &-paragraph {
+          > p {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 72px;
+
+            color: #000000;
+            @media screen and (max-width: 768px) {
+              font-size: 40px;
+              line-height: 60px;
+            }
+          }
+        }
+      }
+      &-bottom {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        @media screen and (max-width: 480px) {
+          flex-direction: column;
+          gap: 8px;
+        }
+        > img {
+          @media screen and (max-width: 480px) {
+            width: 100%;
+          }
+        }
+        > h4 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+
+          color: #000000;
+        }
+      }
+    }
+  }
+}

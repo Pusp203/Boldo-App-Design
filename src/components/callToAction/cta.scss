@@ -1,0 +1,129 @@
+.cta {
+  position: relative;
+  max-width: 1200px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  &-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    background: #0a2640;
+
+    border-radius: 12px;
+    padding: 72px 0;
+    @media screen and (max-width: 768px) {
+      padding: 48px 0;
+      gap: 24px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 24px 0;
+      gap: 12px;
+    }
+    &__random {
+    }
+
+    &__text {
+      z-index: 99;
+      width: 716px;
+      text-align: center;
+      font-weight: 400;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 72px;
+      color: #ffffff;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        line-height: 48px;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        line-height: 40px;
+      }
+    }
+    &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      @media screen and (max-width: 768px) {
+        gap: 12px;
+      }
+      @media screen and (max-width: 480px) {
+        gap: 8px;
+      }
+
+      > input::placeholder {
+      }
+      &-emailfield {
+        flex: 1;
+        padding: 12px 56px;
+        background: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 240px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+        @media screen and (max-width: 768px) {
+          padding: 12px 24px;
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 32px;
+        }
+        @media screen and (max-width: 480px) {
+          padding: 12px 24px;
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 36px;
+        }
+      }
+      &-emailfield {
+      }
+      &-startNowBtn {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        background: #65e4a3;
+        color: #0a2640;
+        border: 2px solid #65e4a3;
+        border-radius: 56px;
+        padding: 16px 56px;
+        @media screen and (max-width: 480px) {
+          padding: 14px 28px;
+          border-radius: 33px;
+        }
+        @media screen and (max-width: 480px) {
+          padding: 12px 24px;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+  &-bgImages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media screen and (max-width: 768px) {
+      top: -99px;
+    }
+    @media screen and (max-width: 480px) {
+      top: -151px;
+      right: -68px;
+    }
+  }
+}
+// &__img {
+//   background-image: url(../../assets/logos.svg);
+//   // background-size: 400px 300px;
+//   width: 734px;
+//   height: 239px;
+//   background-repeat: no-repeat;
+//   // background-image: url(/src/assets/banner.png);
+//   // background-size: 647px 702px;
+//   background-position: right;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }

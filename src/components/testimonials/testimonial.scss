@@ -1,0 +1,77 @@
+.testimonials {
+  background: #0a2640;
+  padding: 96px 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  @media screen and (max-width: 768px) {
+    padding: 0 30px;
+  }
+  .containers {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+      gap: 42px;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 32px;
+    }
+  }
+
+  &-content {
+    text-align: -webkit-center;
+    position: relative;
+    > img {
+      position: absolute;
+      right: 0;
+      bottom: 56px;
+      width: 172px;
+      height: 73px;
+    }
+    > h2 {
+      width: 70%;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 72px;
+      color: #ffffff;
+      @media screen and (max-width: 768px) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 24px;
+        line-height: 36px;
+        width: 100%;
+      }
+    }
+    &-arrows {
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+      // background-color: white;
+      // &__right {
+      //   color: white;
+      //   width: 72px;
+      //   height: 72px;
+      // }
+      // &__left {
+      //   color: white;
+      //   width: 72px;
+      //   height: 72px;
+      // }
+    }
+  }
+  &-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    display: block;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

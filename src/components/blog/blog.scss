@@ -1,0 +1,42 @@
+.blogs {
+  background: #ffffff;
+  max-width: 842px;
+  margin: auto;
+
+  &-text {
+    text-align: center;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding: 80px 0 80px 0;
+    @media screen and (max-width: 1040px) {
+      padding: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 60px 20px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 40px 20px;
+    }
+    > p {
+      color: #777777;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    > h2 {
+      color: #000000;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 72px;
+      @media screen and (max-width: 768px) {
+        line-height: 60px;
+      }
+      @media screen and (max-width: 480px) {
+        line-height: 50px;
+      }
+
+      text-align: center;
+    }
+  }
+}

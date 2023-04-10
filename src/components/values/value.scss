@@ -1,0 +1,125 @@
+.values {
+  background: #0a2640;
+
+  max-width: 900px;
+  margin: auto;
+  &-body {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 72px;
+    @media screen and (max-width: 1020px) {
+      padding: 80px 0;
+      gap: 48px;
+    }
+
+    &__top {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      @media screen and (max-width: 1020px) {
+        gap: 16px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        align-items: center;
+      }
+      &-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+          align-items: center;
+        }
+        > h4 {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+
+          color: #ffffff;
+        }
+        > h2 {
+          font-weight: 400;
+          font-size: 48px;
+          line-height: 72px;
+
+          color: #ffffff;
+          @media only screen and (max-width: 480px) {
+            font-size: 32px;
+            line-height: 48px;
+          }
+        }
+      }
+      &-paragraph {
+        > p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+
+          color: #f1f1f1;
+          @media screen and (max-width: 768px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &-bottom {
+      display: flex;
+      gap: 72px;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: 768px) {
+        gap: 24px;
+      }
+      &-data {
+        display: flex;
+        align-items: flex-start;
+        gap: 50px;
+        width: 90%;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 24px;
+        }
+        &-image {
+          > img {
+            width: 150px;
+            height: 151px;
+            object-fit: cover;
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+        &-bottomTxt {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          > p {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 48px;
+
+            color: #ffffff;
+          }
+          > h5 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+
+            color: #f1f1f1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  &-division {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    padding-top: 84px;
+    gap: 60px;
+    // place-items: center;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+      padding-top: 48px;
+    }
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      padding: 32px 15px 0 15px;
+    }
+
+    &__left {
+      display: flex;
+      gap: 96px;
+      padding-left: 15px;
+      @media screen and (max-width: 1024px) {
+        flex-direction: row;
+      }
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      &-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          gap: 20px;
+        }
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          gap: 10px;
+        }
+        > img {
+          width: 156px;
+          height: 41px;
+        }
+        > p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #777777;
+          padding-bottom: 24px;
+          width: 300px;
+          @media screen and (max-width: 900px) {
+            padding-bottom: 5px;
+          }
+        }
+        > span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #777777;
+        }
+      }
+      &-landings {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        @media screen and (max-width: 900px) {
+          gap: 12px;
+        }
+        > h3 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 32px;
+          color: #000000;
+        }
+        > p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: #777777;
+        }
+      }
+    }
+    &__right {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      gap: 96px;
+
+      @media screen and (max-width: 1024px) {
+        gap: 48px;
+      }
+      @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 59px;
+        padding-right: 15px;
+      }
+      @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 20 px;
+      }
+
+      &-company {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        @media screen and (max-width: 900px) {
+          gap: 12px;
+        }
+        > h3 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 32px;
+          color: #000000;
+        }
+        > p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: #777777;
+        }
+        &_careers {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+
+          > p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: #777777;
+          }
+          .hiring-btn {
+            background: #65e4a3;
+            border-radius: 120px;
+            border: none;
+            padding: 1px 14px;
+            color: #0a2640;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 28px;
+          }
+        }
+      }
+      &-resources {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        @media screen and (max-width: 900px) {
+          gap: 12px;
+        }
+        > h3 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 32px;
+          color: #000000;
+        }
+        > p {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: #777777;
+        }
+      }
+    }
+  }
+}

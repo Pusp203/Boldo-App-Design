@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
+import ellpse from "../../assets/ellpse.png";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -12,11 +13,22 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
+      {/* <div className="navbar-ellipse">
+        {" "}
+        <img src={ellipse} alt="" />{" "}
+      </div> */}
+      {/* <div className="navbar__bgimage">
+        <img src={ellpse} alt="" />
+      </div> */}
+
       <div className="navbar-container">
         <div className="navbar-container__wrappper">
           <div className="navbar-container__wrappper-logo">
-            <img src={logo} alt="" />
-            <p>Boldo</p>
+            <Link to="/" className="logos">
+              {" "}
+              <img className="itemss" src={logo} alt="" />
+              <p className="itemss">Boldo</p>
+            </Link>
           </div>
           <div className="navbar-container__wrappper-links">
             <Link to="/product" className="items">
@@ -64,6 +76,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
+        <div className="navbar-container__color"></div>
       </div>
     </div>
   );

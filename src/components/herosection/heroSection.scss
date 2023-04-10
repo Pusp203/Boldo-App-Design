@@ -1,58 +1,121 @@
-// .heroSection {
-//   max-width: 1200px;
-//   margin: auto;
-//   // background-color: #0a2640;
-//   &-division {
-//     padding: 0px 100px 56px;
-//     // overflow-x: hidden;
+.heroSection {
+  // max-width: 1200px;
+  // position: relative;
 
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // gap: 93px;
-//     &__left {
-//       &-texts {
-//         > span {
-//           font-weight: 400;
-//           font-size: clamp(30px, 5vw, 48px);
-//           line-height: 72px;
-//           color: #ffffff;
-//           padding-bottom: 16px;
-//         }
-//         > p {
-//           font-weight: 400;
-//           font-size: 16px;
-//           line-height: 28px;
-//           color: #f1f1f1;
-//         }
-//       }
+  margin: auto;
+  // @media screen and (max-width: 1024px) {
+  //   max-width: 100%;
+  // }
+  @media screen and (max-width: 990px) {
+    max-width: 100%;
+  }
 
-//       &-buttons {
-//         padding-top: 40px;
-//         display: flex;
-//         gap: 24px;
-//         .buy-template {
-//           background: #65e4a3;
-//           border: 2px solid #69e6a6;
-//           border-radius: 56px;
-//           padding: 16px 56px;
-//         }
-//         .explore {
-//           padding: 16px 56px;
-//           border: 2px solid #ffffff;
-//           border-radius: 56px;
-//         }
-//       }
-//     }
-//     &__graphics {
-//       // > img {
-//       //   width: 493.86px;
-//       //   height: 423px;
-//       // }
-//       background-image: url(./../../assets/logo.png);
-//       background-size: cover;
-//       background-position: right;
-//       background-repeat: repeat;
-//     }
-//   }
-// }
+  &-division {
+    padding: 0px 0 56px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 139px;
+    @media screen and (max-width: 1060px) {
+      gap: 80px;
+    }
+    @media screen and (max-width: 990px) {
+      // padding: 25px 0;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__left {
+      width: 70%;
+      // @media screen and (max-width: 1024px) {
+      //   width: 100%;
+      // }
+      @media screen and (max-width: 990px) {
+        width: 100%;
+      }
+      &-texts {
+        > span {
+          font-weight: 400;
+          font-size: clamp(30px, 5vw, 48px);
+          line-height: 72px;
+          color: #ffffff;
+          padding-bottom: 16px;
+          @media screen and (max-width: 990px) {
+            line-height: 50px;
+            padding-bottom: 26px;
+          }
+          @media screen and (max-width: 440px) {
+            line-height: 40px;
+            padding-bottom: 20px;
+          }
+        }
+        > p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #f1f1f1;
+        }
+      }
+
+      &-buttons {
+        padding-top: 40px;
+        display: flex;
+        gap: 24px;
+        @media screen and (max-width: 990px) {
+          padding-top: 20px;
+        }
+
+        .buy-template {
+          background: #65e4a3;
+          border: 2px solid #69e6a6;
+          border-radius: 56px;
+          padding: 16px 56px;
+          color: #0a2640;
+          font-weight: 700;
+          font-size: 20px;
+          @media screen and (max-width: 990px) {
+            padding: 14px;
+          }
+          @media screen and (max-width: 990px) {
+            padding-top: 14px 35px;
+          }
+        }
+        .explore {
+          background: #0a2640;
+          color: white;
+          padding: 16px 56px;
+          border: 2px solid #ffffff;
+          border-radius: 56px;
+        }
+      }
+    }
+    &__graphics {
+      width: 64%;
+      @media screen and (max-width: 990px) {
+        width: 100%;
+        > img {
+          width: 100%;
+        }
+      }
+
+      // z-index: 1;
+      // width: 20%;
+      // > img {
+      //   width: 493.86px;
+      //   height: 423px;
+      // }
+      // background-image: url(./../../assets/logo.png);
+      // background-size: cover;
+      // background-position: right;
+      // background-repeat: repeat;
+    }
+  }
+  // &__bgimage {
+  //   > img {
+  //     position: absolute;
+  //     top: -377px;
+  //     left: -592px;
+  //     /* right: -108px; */
+  //     z-index: 33;
+  //   }
+  // }
+}
