@@ -5,6 +5,22 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  @media screen and (max-width: 1440px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 1060px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &-body {
     position: relative;
@@ -19,6 +35,8 @@
     @media screen and (max-width: 768px) {
       padding: 48px 0;
       gap: 24px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     @media screen and (max-width: 480px) {
       padding: 24px 0;
@@ -53,6 +71,12 @@
       }
       @media screen and (max-width: 480px) {
         gap: 8px;
+        align-items: flex-start;
+      }
+      @media screen and (max-width: 430px) {
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       > input::placeholder {
@@ -91,13 +115,14 @@
         border: 2px solid #65e4a3;
         border-radius: 56px;
         padding: 16px 56px;
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
           padding: 14px 28px;
           border-radius: 33px;
         }
         @media screen and (max-width: 480px) {
           padding: 12px 24px;
           border-radius: 30px;
+          width: 100%;
         }
       }
     }
@@ -106,24 +131,28 @@
     position: absolute;
     top: 0;
     right: 0;
+    @media screen and (max-width: 1440px) {
+      top: 3px;
+      right: 14px;
+    }
+    @media screen and (max-width: 1060px) {
+      top: -36px;
+      right: 15px;
+    }
     @media screen and (max-width: 768px) {
-      top: -99px;
+      top: -105px;
+      right: 15px;
+    }
+    @media screen and (max-width: 540px) {
+      top: -146px;
+      right: 15px;
     }
     @media screen and (max-width: 480px) {
-      top: -151px;
-      right: -68px;
+      top: -175px;
+      right: 15px;
+    }
+    @media screen and (max-width: 440px) {
+      display: none;
     }
   }
 }
-// &__img {
-//   background-image: url(../../assets/logos.svg);
-//   // background-size: 400px 300px;
-//   width: 734px;
-//   height: 239px;
-//   background-repeat: no-repeat;
-//   // background-image: url(/src/assets/banner.png);
-//   // background-size: 647px 702px;
-//   background-position: right;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }

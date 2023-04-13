@@ -5,7 +5,7 @@ import sun from "../../assets/sun.png";
 import star from "../../assets/star.png";
 import secondCalling from "../../assets/secondCalling.png";
 import pieGraph from "../../assets/pieGraph.png";
-
+import main from "../../assets/main.png";
 const SecondSection = () => {
   return (
     <div className="main">
@@ -37,10 +37,11 @@ const SecondSection = () => {
           </div>
         </div>
         <div className="main-body__img">
-          <img src={secondCalling} alt="" />
+          <img src={main} alt="" />
+          {/* <img src={secondCalling} alt="" />
           <div className="main-body__img-subImg">
-            <img src={pieGraph} alt="" />
-          </div>
+            <img src={pieGraph} alt="" /> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

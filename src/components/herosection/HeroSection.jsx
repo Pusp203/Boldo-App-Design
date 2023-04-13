@@ -6,9 +6,6 @@ import ellpse from "../../assets/ellpse.png";
 const HeroSection = () => {
   return (
     <section className="heroSection">
-      {/* <div className="heroSection__bgimage">
-        <img src={ellpse} alt="" />
-      </div> */}
       <div className="container">
         <div className="heroSection-division">
           <div className="heroSection-division__left">

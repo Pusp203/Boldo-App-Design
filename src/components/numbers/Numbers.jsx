@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./number.scss";
-// import { CountUp } from "use-count-up";
-import CountUp from "react-countUp";
+import CountUp from "react-countup";
 
 const Numbers = () => {
+  const [inView, setInView] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <div className="numbers">
+    <div className={`numbers ${inView ? "in-view" : ""}`} ref={sectionRef}>
       <div className="numbers-body">
         <div className="numbers-body__top">
           <div className="numbers-body__top-paragraph">
             <p>Our numbers</p>
           </div>
           <div className="numbers-body__top-heading">
-            {" "}
-            <h2> Handshake infographic mass market crowdfunding iteration.</h2>
+            <h2>Handshake infographic mass market crowdfunding iteration.</h2>
           </div>
         </div>
         <div className="numbers-body__bottom">

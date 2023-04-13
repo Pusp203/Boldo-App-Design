@@ -41,7 +41,9 @@ const Faqs = () => {
                     <AiFillDownCircle size={32} />
                   )}
                 </div>
-                <div>{isShowing && <p>{value.answer}</p>}</div>
+                <div className="faqs-body__texts-right_third">
+                  {isShowing && <p>{value.answer}</p>}
+                </div>
                 <hr />
 
                 <div
@@ -55,7 +57,11 @@ const Faqs = () => {
                     <AiFillDownCircle size={32} />
                   )}
                 </div>
-                <div>{isShowing1 && <p>{value.answer}</p>}</div>
+
+                <div className="faqs-body__texts-right_third">
+                  {isShowing1 && <p>{value.answer}</p>}
+                </div>
+                <hr />
               </div>
             </div>
           );

@@ -5,7 +5,6 @@ import HeroSection from "./components/herosection/HeroSection";
 
 import "./styles/components/app.scss";
 import Footer from "./components/footer/Footer";
-import Service from "./components/services/Service";
 import Heading from "./components/heading/Heading";
 import Cta from "./components/callToAction/Cta";
 import Article from "./components/article/Article";
@@ -14,63 +13,44 @@ import Testimonials from "./components/testimonials/Testimonials";
 import FirstSection from "./components/sections/FirstSection";
 import Logo from "./components/logos/Logo";
 import SecondSection from "./components/secondSection/SecondSection";
-import Blog from "./components/blog/Blog";
-import OurBlog from "./components/ourBlog/OurBlog";
+// import Blog from "./components/blog/Blog";
+// import OurBlog from "./components/ourBlog/OurBlog";
 import Slickss from "./components/testimonials/Slickss";
-import Services from "./Services";
-import Products from "./Products";
 import Numbers from "./components/numbers/Numbers";
 import Featured from "./components/featured/Featured";
 import Story from "./components/ourStory/Story";
 import Value from "./components/values/Value";
 import OurTeam from "./components/ourTeam/OurTeam";
 import About from "./About";
+import Testimonial from "./components/Carosuelss";
+import Home from "./Home";
+import Blogs from "./components/Blogs";
 function App() {
   return (
     // <div className="app">
     <BrowserRouter>
-      <div className="app__BannerWrapper">
-        <Navbar />
-      </div>
-      {/* <HeroSection />
-        <Logo />
-       <Heading />
-      <Service />
-      <FirstSection />
-      <SecondSection />
-      <Testimonials />
-      <Blog />
-      <Article />
-      <Faqs /> */}
+      <div className="app__BannerWrapper">{/* <Navbar /> */}</div>
+
+      {/* <Testimonials /> */}
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/product" element={<Products />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
+
+      {/*      
+             <Numbers />
+           <Services /> 
+            <Products />*/}
       <Cta />
       <Footer />
-      {/*
-
-    
-     
-     
-
-
-     */}
-      {/*      
-          
-               <Numbers />
-            --done */}
-
-      {/* <Services /> 
-            <Products />*/}
     </BrowserRouter>
   );
 }
 
 export default App;
-/* <OurBlog /> */
+/**/
 
 {
   /* <div className="app__BannerWrapper">

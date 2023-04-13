@@ -8,15 +8,17 @@ import Value from "./components/values/Value";
 import Story from "./components/ourStory/Story";
 import Images from "./components/images/Images";
 import AboutHero from "./components/aboutHero/AboutHero";
+import Navbar from "./components/navbar/Navbar";
 
 const About = () => {
   return (
     <div>
       {/* <Story /> */}
       <div className="app__BannerWrapper">
+        <Navbar />
         <AboutHero />
       </div>
-      <Images />
+      {/* <Images /> */}
       <Story />
       <div className="app__BannerWrapper">
         <Numbers />

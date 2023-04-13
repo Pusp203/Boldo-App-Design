@@ -31,14 +31,14 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-container__wrappper-links">
-            <Link to="/product" className="items">
-              Product
-            </Link>
-            <Link to="/services" className="items">
-              Services
+            <Link to="/" className="items">
+              Home
             </Link>
             <Link to="/about" className="items">
               About
+            </Link>
+            <Link to="/blogs" className="items">
+              Blogs
             </Link>
             <button className="primary-btn">Log In</button>
           </div>
@@ -55,11 +55,11 @@ const Navbar = () => {
             {toggleMenu && (
               <div className="navbar-container__wrappper-hamburgurMenu_container">
                 <div className="navbar-container__wrappper-hamburgurMenu_container-links">
-                  <Link to="/product" className="item">
-                    Product
+                  <Link to="/" className="item">
+                    Home
                   </Link>
-                  <Link to="/services" className="item">
-                    Services
+                  <Link to="/blogs" className="item">
+                    Blogs
                   </Link>
                   <Link to="/about" className="item">
                     About

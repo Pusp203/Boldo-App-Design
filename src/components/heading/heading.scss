@@ -18,6 +18,9 @@
     @media screen and (max-width: 480px) {
       padding: 25px 15px;
     }
+    @media screen and (max-width: 440px) {
+      gap: 4px;
+    }
     > p {
       color: #777777;
       font-weight: 400;
@@ -36,6 +39,10 @@
       }
       @media screen and (max-width: 480px) {
         line-height: 40px;
+      }
+      @media screen and (max-width: 440px) {
+        line-height: 30px;
+        font-size: 22px;
       }
     }
   }

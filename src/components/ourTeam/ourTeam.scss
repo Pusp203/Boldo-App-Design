@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 52px;
     @media screen and (max-width: 768px) {
-      padding: 48px 0;
+      padding: 24px 0;
     }
     @media screen and (max-width: 480px) {
       padding: 48px 16px 64px 16px;
@@ -47,8 +47,8 @@
 
           color: #000000;
           @media screen and (max-width: 480px) {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: 36px;
+            line-height: 33px;
           }
         }
       }
@@ -66,22 +66,25 @@
       display: flex;
       gap: 51px;
       @media screen and (max-width: 1020px) {
-        flex-direction: row;
-        gap: 45px;
+        // flex-direction: column;
+        gap: 25px;
         padding: 0 15px;
       }
       @media screen and (max-width: 768px) {
         flex-direction: row;
-        gap: 32px;
+        gap: 20px;
       }
       @media screen and (max-width: 480px) {
         flex-direction: column;
-        gap: 22px;
+        gap: 8px;
       }
       &-mappedValue {
         display: flex;
         flex-direction: column;
         gap: 24px;
+        @media screen and (max-width: 768px) {
+          gap: 8px;
+        }
 
         &-image {
           > img {
@@ -106,12 +109,21 @@
           display: flex;
           flex-direction: column;
           gap: 12px;
+          @media screen and (max-width: 768px) {
+            gap: 2px;
+          }
+          @media screen and (max-width: 480px) {
+            gap: 2px;
+          }
           > p {
             font-weight: 400;
             font-size: 28px;
             line-height: 48px;
 
             color: #000000;
+            @media screen and (max-width: 768px) {
+              font-size: 20px;
+            }
           }
           > h5 {
             font-weight: 400;
@@ -119,6 +131,9 @@
             line-height: 32px;
 
             color: #777777;
+            @media screen and (max-width: 768px) {
+              font-size: 16px;
+            }
           }
         }
       }

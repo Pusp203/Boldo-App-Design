@@ -15,6 +15,7 @@ const Article = ({ initialVisible = 3 }) => {
   const showMoreItems = () => {
     setVisible((prevValue) => prevValue + 3);
   };
+  const shouldRenderLoadMoreButton = visible < Data.length;
   return (
     <div className="article">
       <div className="article-division">
@@ -23,7 +24,7 @@ const Article = ({ initialVisible = 3 }) => {
           {Data.slice(0, visible).map((item) => {
             // console.log("item", item);
             return (
-              <div>
+              <div key={item.id}>
                 <div className="article-division-body__article1">
                   <div
                     className="article-division-body__article1-image"
@@ -54,9 +55,14 @@ const Article = ({ initialVisible = 3 }) => {
           })}
           {/* </div> */}
         </div>
-        <div className="article-division-button" onClick={showMoreItems}>
+        {shouldRenderLoadMoreButton && (
+          <div className="article-division-button" onClick={showMoreItems}>
+            Load more
+          </div>
+        )}
+        {/* <div className="article-division-button" onClick={showMoreItems}>
           Load more
-        </div>
+        </div> */}
       </div>
     </div>
   );

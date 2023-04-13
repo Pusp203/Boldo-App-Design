@@ -8,15 +8,16 @@
     display: flex;
     gap: 12px;
     flex-direction: column;
-    padding: 80px 0 80px 0;
+    padding-top: 80px;
     @media screen and (max-width: 1040px) {
-      padding: 60px;
+      padding: 0 15px;
     }
     @media screen and (max-width: 768px) {
-      padding: 60px 20px;
+      padding: 0 15px;
     }
     @media screen and (max-width: 480px) {
-      padding: 40px 20px;
+      padding: 0 15px;
+      gap: 6px;
     }
     > p {
       color: #777777;
@@ -30,10 +31,16 @@
       font-size: 48px;
       line-height: 72px;
       @media screen and (max-width: 768px) {
-        line-height: 60px;
+        line-height: 50px;
+        font-size: 38px;
       }
       @media screen and (max-width: 480px) {
-        line-height: 50px;
+        line-height: 36px;
+        font-size: 28px;
+      }
+      @media screen and (max-width: 390px) {
+        line-height: 32px;
+        font-size: 28px;
       }
 
       text-align: center;

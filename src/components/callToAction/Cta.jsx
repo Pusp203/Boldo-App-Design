@@ -11,6 +11,7 @@ const Cta = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
+    setEmail("");
   };
   return (
     <div className="cta">
@@ -33,7 +34,12 @@ const Cta = () => {
               onChange={handleChange}
             />
           </form>
-          <button className="cta-body__buttons-startNowBtn">Start now</button>
+          <button
+            className="cta-body__buttons-startNowBtn"
+            onClick={handleSubmit}
+          >
+            Start now
+          </button>
         </div>
       </div>
       <div className="cta-bgImages">
@@ -46,10 +52,3 @@ const Cta = () => {
 };
 
 export default Cta;
-// const handleChange = (e) => {
-//   setEmail(e.target.value);
-// };
-// const handleSubmit = (e) => {
-//   e.preventDefault();
-//   console.log(email);
-// };

@@ -3,9 +3,7 @@
   // position: relative;
 
   margin: auto;
-  // @media screen and (max-width: 1024px) {
-  //   max-width: 100%;
-  // }
+
   @media screen and (max-width: 990px) {
     max-width: 100%;
   }
@@ -17,19 +15,23 @@
     align-items: center;
     gap: 139px;
     @media screen and (max-width: 1060px) {
-      gap: 80px;
+      gap: 58px;
     }
+
     @media screen and (max-width: 990px) {
-      // padding: 25px 0;
       flex-direction: column;
       gap: 30px;
     }
+    @media screen and (max-width: 480px) {
+      gap: 20px;
+    }
     &__left {
       width: 70%;
-      // @media screen and (max-width: 1024px) {
-      //   width: 100%;
-      // }
+
       @media screen and (max-width: 990px) {
+        width: 85%;
+      }
+      @media screen and (max-width: 480px) {
         width: 100%;
       }
       &-texts {
@@ -39,13 +41,19 @@
           line-height: 72px;
           color: #ffffff;
           padding-bottom: 16px;
-          @media screen and (max-width: 990px) {
-            line-height: 50px;
-            padding-bottom: 26px;
+          @media screen and (max-width: 1060px) {
+            font-size: 46px;
+            line-height: 56px;
           }
-          @media screen and (max-width: 440px) {
-            line-height: 40px;
-            padding-bottom: 20px;
+          @media screen and (max-width: 990px) {
+            font-size: 32px;
+            line-height: 46px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 28px;
+            line-height: 42px;
+            padding-bottom: 0;
           }
         }
         > p {
@@ -53,6 +61,16 @@
           font-size: 16px;
           line-height: 28px;
           color: #f1f1f1;
+          @media screen and (max-width: 990px) {
+            padding-top: 6px;
+            font-size: 14px;
+            line-height: 24px;
+          }
+          @media screen and (max-width: 480px) {
+            padding-top: 6px;
+            font-size: 14px;
+            line-height: 24px;
+          }
         }
       }
 
@@ -61,7 +79,12 @@
         display: flex;
         gap: 24px;
         @media screen and (max-width: 990px) {
-          padding-top: 20px;
+          padding-top: 10px;
+        }
+
+        @media screen and (max-width: 480px) {
+          padding-top: 8px;
+          gap: 10px;
         }
 
         .buy-template {
@@ -72,11 +95,24 @@
           color: #0a2640;
           font-weight: 700;
           font-size: 20px;
-          @media screen and (max-width: 990px) {
-            padding: 14px;
+          @media screen and (max-width: 1060px) {
+            padding: 12px;
           }
           @media screen and (max-width: 990px) {
-            padding-top: 14px 35px;
+            flex: 1;
+            border-radius: 26px;
+            font-size: 14px;
+          }
+
+          @media screen and (max-width: 480px) {
+            flex: 1;
+            border-radius: 26px;
+            font-size: 14px;
+            padding: 10px;
+          }
+          @media screen and (max-width: 385px) {
+            padding: 10px;
+            font-size: 14px;
           }
         }
         .explore {
@@ -85,6 +121,18 @@
           padding: 16px 56px;
           border: 2px solid #ffffff;
           border-radius: 56px;
+          @media screen and (max-width: 990px) {
+            flex: 1;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 26px;
+          }
+          @media screen and (max-width: 480px) {
+            flex: 1;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 26px;
+          }
         }
       }
     }
@@ -92,6 +140,11 @@
       width: 64%;
       @media screen and (max-width: 990px) {
         width: 100%;
+        > img {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 960px) {
         > img {
           width: 100%;
         }
