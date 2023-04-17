@@ -39,27 +39,31 @@
       padding-right: 15px;
     }
     @media screen and (max-width: 480px) {
-      padding: 24px 0;
+      padding: 20px 0;
       gap: 12px;
     }
     &__random {
     }
 
     &__text {
-      z-index: 99;
-      width: 716px;
-      text-align: center;
-      font-weight: 400;
-      font-size: clamp(30px, 5vw, 48px);
-      line-height: 72px;
-      color: #ffffff;
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        line-height: 48px;
-      }
-      @media screen and (max-width: 480px) {
-        width: 100%;
-        line-height: 40px;
+      > p {
+        z-index: 99;
+        width: 716px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        color: #ffffff;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          line-height: 48px;
+        }
+        @media screen and (max-width: 480px) {
+          width: 100%;
+
+          line-height: 30px;
+          font-size: 25px;
+        }
       }
     }
     &__buttons {

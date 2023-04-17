@@ -25,27 +25,28 @@ import About from "./About";
 import Testimonial from "./components/Carosuelss";
 import Home from "./Home";
 import Blogs from "./components/Blogs";
+import Testi from "./components/Testi";
+import Ipl from "./Ipl";
 function App() {
   return (
-    // <div className="app">
-    <BrowserRouter>
-      <div className="app__BannerWrapper">{/* <Navbar /> */}</div>
+    <div className="app">
+      <BrowserRouter>
+        <div className="app__BannerWrapper">
+          <Navbar />
+        </div>
 
-      {/* <Testimonials /> */}
+        {/* <Testimonials /> */}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blogs />} />
-      </Routes>
+        <Routes>
+          {/* <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blogs" element={<Blogs />} /> */}
+        </Routes>
 
-      {/*      
-             <Numbers />
-           <Services /> 
-            <Products />*/}
-      <Cta />
-      <Footer />
-    </BrowserRouter>
+        <Cta />
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
@@ -55,8 +56,10 @@ export default App;
 {
   /* <div className="app__BannerWrapper">
         <HeroSection />
-       
-      </div> */
+         {/*      
+             <Numbers />
+           <Services /> 
+            <Products />*/
 }
 {
   // <About />
