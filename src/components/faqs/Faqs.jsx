@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./faqs.scss";
 import upArrow from "../../assets/upArrow.png";
 import Image from "../../assets/Image.png";
 import { Data } from "./Data";
 import { AiFillDownCircle, AiFillUpCircle } from "react-icons/ai";
-import { useState } from "react";
+
 const Faqs = () => {
-  const [isShowing, setIsShowing] = useState(false);
-  const handleToggle = () => {
-    setIsShowing((prev) => !prev);
+  const [data, setData] = useState(Data);
+
+  const handleToggle = (index) => {
+    setData((prevData) => {
+      const newData = [...prevData];
+      newData[index].isShowing = !newData[index].isShowing;
+      return newData;
+    });
   };
 
   return (
     <div className="faqs">
       <div className="faqs-body">
         <div className="faqs-body_image">
-          {" "}
           <img src={Image} alt="" />
         </div>
         <div className="faqs-body__texts">
@@ -26,18 +30,17 @@ const Faqs = () => {
             </p>
           </div>
           <div className="faqs-body__texts-right">
-            {Data.map((value, index) => {
+            {data.map((value, index) => {
               return (
                 <div
                   className="faqs-body__texts-right-top"
                   key={index}
-                  onClick={handleToggle}
+                  onClick={() => handleToggle(index)}
                 >
                   <div className="faqs-body__texts-right-top-question">
-                    {" "}
                     <p>{value.question}</p>
                     <h4>
-                      {isShowing ? (
+                      {value.isShowing ? (
                         <AiFillUpCircle size={32} />
                       ) : (
                         <AiFillDownCircle size={32} />
@@ -45,7 +48,7 @@ const Faqs = () => {
                     </h4>
                   </div>
                   <div>
-                    {isShowing && <p>{value.answer}</p>}
+                    {value.isShowing && <p>{value.answer}</p>}
                     <hr />
                   </div>
                 </div>
