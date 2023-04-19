@@ -5,20 +5,12 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
-    align-items: center;
 
     @media screen and (max-width: 1120px) {
       padding: 0px 15px;
       gap: 32px;
     }
-    @media screen and (max-width: 990px) {
-      padding: 0px 15px;
-      gap: 30px;
-    }
-    @media screen and (max-width: 480px) {
-      padding: 40px 15px;
-      gap: 24px;
-    }
+
     &_image {
       > img {
         width: 100%;
@@ -34,16 +26,13 @@
 
     &__texts {
       display: flex;
-      align-items: center;
       gap: 100px;
+      align-items: baseline;
 
-      @media screen and (max-width: 1060px) {
-        gap: 70px;
-      }
-      @media screen and (max-width: 990px) {
-        flex-direction: column;
+      @media screen and (max-width: 880px) {
         gap: 15px;
         align-items: center;
+        flex-direction: column;
       }
       @media screen and (max-width: 480px) {
         gap: 30px;
@@ -51,14 +40,9 @@
       }
       &-left {
         width: 50%;
-        @media screen and (max-width: 990px) {
-          width: 70%;
-        }
-        @media screen and (max-width: 700px) {
-          width: 95%;
-        }
-        @media screen and (max-width: 480px) {
-          width: 95%;
+
+        @media screen and (max-width: 880px) {
+          width: 100%;
         }
 
         > p {
@@ -71,104 +55,39 @@
             font-size: 28px;
             line-height: 42px;
           }
-          @media screen and (max-width: 990px) {
-            line-height: 36px;
-            font-size: 28px;
-          }
-          @media screen and (max-width: 600px) {
+
+          @media screen and (max-width: 700px) {
             font-size: 24px;
             line-height: 32px;
-          }
-          @media screen and (max-width: 480px) {
-            line-height: 30px;
-            font-size: 24px;
           }
         }
       }
       &-right {
-        @media screen and (max-width: 990x) {
-          width: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width: 880px) {
+          width: 100%;
         }
-        &_first {
-          display: flex;
-          align-items: center;
-          gap: 84px;
 
-          @media screen and (max-width: 1060x) {
-            gap: 20px;
-          }
-          @media screen and (max-width: 990x) {
-            justify-content: space-between;
-          }
-          @media screen and (max-width: 480px) {
-            flex-direction: row;
+        &-top {
+          &-question {
+            display: flex;
+            align-items: center;
 
-            align-items: flex-start;
-            gap: 10px;
-          }
-
-          > img {
-            padding-bottom: 20px;
-            @media screen and (max-width: 990px) {
-              // width: 60%;
-              margin: auto;
-              padding-bottom: 10px;
+            > p {
+              flex: 1;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 32px;
+              color: #000000;
+              padding-bottom: 17px;
+              @media screen and (max-width: 480px) {
+                padding-bottom: 10px;
+              }
             }
-            @media screen and (max-width: 480px) {
-              width: 60%;
-              margin: auto;
-              padding-bottom: 10px;
-            }
-          }
-          > p {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            color: #000000;
-            padding-bottom: 17px;
-            @media screen and (max-width: 480px) {
-              padding-bottom: 10px;
-            }
-          }
-        }
-        &_second {
-          display: flex;
-          padding-top: 32px;
-          gap: 84px;
-          @media screen and (max-width: 1060x) {
-            gap: 20px;
-          }
-
-          @media screen and (max-width: 480px) {
-            flex-direction: row;
-
-            align-items: flex-start;
-            gap: 10px;
-          }
-          > img {
-            padding-bottom: 20px;
-            @media screen and (max-width: 480px) {
-              width: 60%;
-              margin: auto;
-              padding-bottom: 10px;
-            }
-          }
-          > p {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 32px;
-            color: #000000;
-            padding-bottom: 17px;
-            @media screen and (max-width: 480px) {
-              padding-bottom: 10px;
-            }
-          }
-        }
-        &_third {
-          > p {
-            padding-bottom: 20px;
-            font-size: 20px;
-            line-height: 32px;
           }
         }
       }

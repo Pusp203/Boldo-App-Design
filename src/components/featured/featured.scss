@@ -2,19 +2,18 @@
   max-width: 1200px;
   margin: auto;
   &-body {
-    padding: 40px 0 72px 0;
+    padding-bottom: 72px;
     display: flex;
     gap: 100px;
-    align-items: center;
+    // align-items: center;
     @media screen and (max-width: 1440px) {
-      padding: 0 15px;
+      padding: 0 15px 72px;
     }
     @media screen and (max-width: 1060px) {
       gap: 50px;
       padding: 32px 15px;
     }
     @media screen and (max-width: 990px) {
-      align-items: flex-start;
       gap: 30px;
       flex-direction: column;
       padding: 0 15px;

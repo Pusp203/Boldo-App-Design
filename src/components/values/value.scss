@@ -1,7 +1,7 @@
 .values {
   background: #0a2640;
 
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
   &-body {
     padding: 120px 0;
@@ -11,8 +11,16 @@
     flex-direction: column;
     gap: 72px;
     @media screen and (max-width: 1020px) {
-      padding: 80px 0;
+      padding: 80px 15px;
       gap: 48px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 60px 15px;
+      gap: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      gap: 30px;
+      padding: 30px 15px;
     }
 
     &__top {
@@ -20,13 +28,12 @@
       align-items: flex-start;
       flex-direction: column;
       gap: 20px;
-      width: 90%;
       @media screen and (max-width: 1020px) {
         gap: 16px;
       }
       @media screen and (max-width: 768px) {
-        width: 100%;
         align-items: center;
+        gap: 10px;
       }
       &-heading {
         display: flex;
@@ -34,8 +41,12 @@
         align-items: flex-start;
         gap: 12px;
         @media screen and (max-width: 768px) {
+          gap: 10px;
           text-align: center;
           align-items: center;
+        }
+        @media screen and (max-width: 768px) {
+          gap: 2px;
         }
         > h4 {
           font-weight: 400;
@@ -50,9 +61,13 @@
           line-height: 72px;
 
           color: #ffffff;
+          @media only screen and (max-width: 768px) {
+            font-size: 42px;
+            line-height: 50px;
+          }
           @media only screen and (max-width: 480px) {
-            font-size: 32px;
-            line-height: 48px;
+            font-size: 28px;
+            line-height: 32px;
           }
         }
       }
@@ -65,6 +80,12 @@
           color: #f1f1f1;
           @media screen and (max-width: 768px) {
             text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+          }
+          @media screen and (max-width: 480px) {
+            font-size: 14px;
+            line-height: 24px;
           }
         }
       }
@@ -77,17 +98,19 @@
       @media screen and (max-width: 768px) {
         gap: 24px;
       }
+      @media screen and (max-width: 480px) {
+        gap: 18px;
+      }
       &-data {
         display: flex;
         align-items: flex-start;
         gap: 50px;
-        width: 90%;
         @media screen and (max-width: 768px) {
-          width: 100%;
+          // width: 100%;
           flex-direction: column;
           align-items: center;
           text-align: center;
-          gap: 24px;
+          gap: 12px;
         }
         &-image {
           > img {
@@ -104,12 +127,22 @@
           display: flex;
           flex-direction: column;
           gap: 16px;
+          @media screen and (max-width: 768px) {
+            gap: 12px;
+          }
+          @media screen and (max-width: 480px) {
+            gap: 10px;
+          }
           > p {
             font-weight: 400;
             font-size: 28px;
             line-height: 48px;
 
             color: #ffffff;
+            @media screen and (max-width: 480px) {
+              font-size: 22px;
+              line-height: 22px;
+            }
           }
           > h5 {
             font-weight: 400;
@@ -117,6 +150,10 @@
             line-height: 32px;
 
             color: #f1f1f1;
+            @media screen and (max-width: 480px) {
+              font-size: 16px;
+              line-height: 22px;
+            }
           }
         }
       }

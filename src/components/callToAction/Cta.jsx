@@ -25,21 +25,21 @@ const Cta = () => {
           <p> An enterprise template to ramp up your company website</p>
         </div>
         <div className="cta-body__buttons">
-          <form action="" onSubmit={handleSubmit}>
-            <input
-              type="text"
-              className="cta-body__buttons-emailfield"
-              placeholder="Your email address"
-              value={email}
-              onChange={handleChange}
-            />
-          </form>
+          {/* <form action="" onSubmit={handleSubmit}> */}
+          <input
+            type="text"
+            className="cta-body__buttons-emailfield"
+            placeholder="Your email address"
+            value={email}
+            onChange={handleChange}
+          />
           <button
             className="cta-body__buttons-startNowBtn"
             onClick={handleSubmit}
           >
             Start now
           </button>
+          {/* </form> */}
         </div>
       </div>
       <div className="cta-bgImages">

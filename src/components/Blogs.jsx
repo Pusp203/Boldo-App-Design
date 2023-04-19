@@ -8,9 +8,6 @@ import Heading from "./heading/Heading";
 const Blogs = () => {
   return (
     <div>
-      <div className="app__BannerWrapper">
-        <Navbar />
-      </div>
       <Heading />
       <Featured />
 

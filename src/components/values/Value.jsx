@@ -20,10 +20,10 @@ const Value = () => {
           </div>
         </div>
         <div className="values-body-bottom">
-          {data.map((values) => {
+          {data.map((values, index) => {
             // console.log("first", values);
             return (
-              <div className="values-body-bottom-data">
+              <div className="values-body-bottom-data" key={index}>
                 <div className="values-body-bottom-data-image">
                   {/* <p>{values.image}</p> */}
                   <img src={values.image} alt="" />

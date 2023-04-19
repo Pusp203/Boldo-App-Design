@@ -3,7 +3,6 @@ import "./ourTeam.scss";
 import { data } from "./Data";
 
 const OurTeam = () => {
-  console.log(data);
   return (
     <div className="team">
       <div className="team-body">
@@ -21,16 +20,13 @@ const OurTeam = () => {
           </div>
         </div>
         <div className="team-body__bottom">
-          {data.map((values) => {
-            console.log("first", values);
+          {data.map((values, index) => {
             return (
-              <div className="team-body__bottom-mappedValue">
+              <div key={index} className="team-body__bottom-mappedValue">
                 <div className="team-body__bottom-mappedValue-image">
-                  {/* <p>{values.image}</p> */}
                   <img src={values.image} alt="" />
                 </div>
                 <div className="team-body__bottom-mappedValue-bottomTxt">
-                  {" "}
                   <p>{values.name}</p>
                   <h5>{values.post}</h5>
                 </div>

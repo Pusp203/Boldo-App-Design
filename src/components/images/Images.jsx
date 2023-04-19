@@ -9,15 +9,16 @@ import leftBottom from "../../assets/leftBottom.png";
 const Images = () => {
   return (
     <div className="images">
-      <div className="images-main">
-        <div className="images-main__left">
-          <img className="images-main__left-img1" src={leftTop} alt="" />
-          <img className="images-main__left-img2" src={leftBottom} alt="" />
+      <div className="images--main">
+        <div className="images--main__top">
+          <img src={leftTop} alt="" />
+          <img src={leftBottom} alt="" />
         </div>
-        <div className="images-main__middle">
+        <div className="images--main__middle">
           <img src={middleImage} alt="" />
         </div>
-        <div className="images-main__left">
+
+        <div className="images--main__bottom">
           <img src={rightTop} alt="" />
           <img src={rightBottom} alt="" />
         </div>

@@ -1,25 +1,110 @@
 import React from "react";
+import Slider from "react-slick";
 import "./logo.scss";
-import boldo from "../../assets/boldo.png";
-import a from "../../assets/a.png";
-import b from "../../assets/b.png";
-import c from "../../assets/c.png";
-import d from "../../assets/d.png";
-import e from "../../assets/e.png";
-import f from "../../assets/f.png";
-import g from "../../assets/g.png";
+// import presto from "../../assets/presto.png";
+import presto from "../../assets/presto.svg";
+import presto2 from "../../assets/presto2.svg";
+import boldos from "../../assets/boldos.svg";
+
+import footerLogo from "../../assets/footerLogo.png";
 
 const Logo = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 1500,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          dots: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          infinite: true,
+          speed: 1000,
+          autoplaySpeed: 1500,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          speed: 1000,
+          autoplaySpeed: 1500,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          dots: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="logo">
       <div className="logo-section">
-        <img src={g} alt="" />
-        <img src={f} alt="" />
-        <img src={e} alt="" />
-        <img src={d} alt="" />
-        <img src={c} alt="" />
-        <img src={b} alt="" />
-        <img src={a} alt="" />
+        <Slider {...settings}>
+          <div>
+            <img src={presto} alt="" />
+          </div>
+          <div>
+            <img src={boldos} alt="" />
+          </div>
+          <div>
+            <img src={presto2} alt="" />
+          </div>
+          <div>
+            <img src={presto} alt="" />
+          </div>
+          <div>
+            <img src={boldos} alt="" />
+          </div>
+          <div>
+            <img src={presto2} alt="" />
+          </div>
+          <div>
+            <img src={presto} alt="" />
+          </div>
+          <div>
+            <img src={boldos} alt="" />
+          </div>
+          <div>
+            <img src={presto2} alt="" />
+          </div>
+          <div>
+            <img src={presto} alt="" />
+          </div>
+          <div>
+            <img src={boldos} alt="" />
+          </div>
+          <div>
+            <img src={presto2} alt="" />
+          </div>
+          {/* 
+          <img src={footerLogo} alt="" />
+          <img src={footerLogo} alt="" /> */}
+        </Slider>
       </div>
     </div>
   );

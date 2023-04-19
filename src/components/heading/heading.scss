@@ -6,7 +6,7 @@
     display: flex;
     gap: 12px;
     flex-direction: column;
-    padding: 84px 0 80px 0;
+    padding: 45px 0;
     @media screen and (max-width: 1040px) {
       padding: 64px 16px;
       gap: 16px;
@@ -17,10 +17,9 @@
     }
     @media screen and (max-width: 480px) {
       padding: 25px 15px;
-    }
-    @media screen and (max-width: 440px) {
       gap: 4px;
     }
+
     > p {
       color: #777777;
       font-weight: 400;

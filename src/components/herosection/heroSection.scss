@@ -30,9 +30,10 @@
 
       @media screen and (max-width: 990px) {
         width: 85%;
+        padding-top: 1rem;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 95%;
       }
       &-texts {
         > span {
@@ -51,8 +52,8 @@
           }
 
           @media screen and (max-width: 480px) {
-            font-size: 28px;
-            line-height: 42px;
+            font-size: 24px;
+            line-height: 2rem;
             padding-bottom: 0;
           }
         }
@@ -67,9 +68,9 @@
             line-height: 24px;
           }
           @media screen and (max-width: 480px) {
-            padding-top: 6px;
-            font-size: 14px;
             line-height: 24px;
+            font-size: 16px;
+            padding-top: 8px;
           }
         }
       }
@@ -83,7 +84,7 @@
         }
 
         @media screen and (max-width: 480px) {
-          padding-top: 8px;
+          padding-top: 15px;
           gap: 10px;
         }
 

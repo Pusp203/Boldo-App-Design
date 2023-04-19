@@ -1,5 +1,4 @@
 import React from "react";
-import Testimonials from "./components/testimonials/Testimonials";
 import Blog from "./components/blog/Blog";
 import Numbers from "./components/numbers/Numbers";
 import Article from "./components/article/Article";
@@ -15,10 +14,10 @@ const About = () => {
     <div>
       {/* <Story /> */}
       <div className="app__BannerWrapper">
-        <Navbar />
         <AboutHero />
       </div>
-      {/* <Images /> */}
+      <Images />
+
       <Story />
       <div className="app__BannerWrapper">
         <Numbers />

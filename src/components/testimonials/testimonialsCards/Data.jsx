@@ -15,6 +15,34 @@ export const Data = [
   },
   {
     id: 3,
+    name: "Harry Potter",
+    email: "Manager @ Howarts",
+    quote:
+      "“Release facebook responsive web design business model canvas seed money monetization.”",
+  },
+  {
+    id: 3,
+    name: "Albus Dumbledore",
+    email: "Manager @ Howarts",
+    quote:
+      "“Release facebook responsive web design business model canvas seed money monetization.”",
+  },
+  {
+    id: 3,
+    name: "Albus Dumbledore",
+    email: "Manager @ Howarts",
+    quote:
+      "“Release facebook responsive web design business model canvas seed money monetization.”",
+  },
+  {
+    id: 3,
+    name: "Albus Dumbledore",
+    email: "Manager @ Howarts",
+    quote:
+      "“Release facebook responsive web design business model canvas seed money monetization.”",
+  },
+  {
+    id: 3,
     name: "Albus Dumbledore",
     email: "Manager @ Howarts",
     quote:

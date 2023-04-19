@@ -10,28 +10,26 @@ import Article from "./components/article/Article";
 import Cta from "./components/callToAction/Cta";
 import Footer from "./components/footer/Footer";
 import Faqs from "./components/faqs/Faqs";
+import Testimonial from "./Testimonial";
+import Logo from "./components/logos/Logo";
 
 const Home = () => {
   return (
     <div>
       <div className="app__BannerWrapper">
-        <Navbar />
         <HeroSection />
+        <Logo />
       </div>
       <Heading />
       <Service />
       <FirstSection />
       <SecondSection />
-
+      <div className="app__BannerWrapper">
+        <Testimonial />
+      </div>
       <Blog />
       <Article />
       <Faqs />
-
-      {/* 
-        <Logo />
-     
-   
-  */}
     </div>
   );
 };

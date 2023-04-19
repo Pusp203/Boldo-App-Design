@@ -76,7 +76,7 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        <div className="navbar-container__color"></div>
+        {/* <div className="navbar-container__color"></div> */}
       </div>
     </div>
   );

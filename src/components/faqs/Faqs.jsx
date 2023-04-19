@@ -11,9 +11,7 @@ const Faqs = () => {
   const handleToggle = () => {
     setIsShowing((prev) => !prev);
   };
-  const handleToggle1 = () => {
-    setIsShowing1((prev) => !prev);
-  };
+
   return (
     <div className="faqs">
       <div className="faqs-body">
@@ -21,51 +19,41 @@ const Faqs = () => {
           {" "}
           <img src={Image} alt="" />
         </div>
-        {Data.map((value) => {
-          // console.log("value", value);
-
-          return (
-            <div className="faqs-body__texts">
-              <div className="faqs-body__texts-left">
-                <p>{value.paragraph}</p>
-              </div>
-              <div className="faqs-body__texts-right">
+        <div className="faqs-body__texts">
+          <div className="faqs-body__texts-left">
+            <p>
+              We connect our customers with the best, and help them keep up-and
+              stay open.
+            </p>
+          </div>
+          <div className="faqs-body__texts-right">
+            {Data.map((value, index) => {
+              return (
                 <div
-                  className="faqs-body__texts-right_first"
+                  className="faqs-body__texts-right-top"
+                  key={index}
                   onClick={handleToggle}
                 >
-                  <p>{value.question}</p>
-                  {isShowing ? (
-                    <AiFillUpCircle size={32} />
-                  ) : (
-                    <AiFillDownCircle size={32} />
-                  )}
+                  <div className="faqs-body__texts-right-top-question">
+                    {" "}
+                    <p>{value.question}</p>
+                    <h4>
+                      {isShowing ? (
+                        <AiFillUpCircle size={32} />
+                      ) : (
+                        <AiFillDownCircle size={32} />
+                      )}
+                    </h4>
+                  </div>
+                  <div>
+                    {isShowing && <p>{value.answer}</p>}
+                    <hr />
+                  </div>
                 </div>
-                <div className="faqs-body__texts-right_third">
-                  {isShowing && <p>{value.answer}</p>}
-                </div>
-                <hr />
-
-                <div
-                  className="faqs-body__texts-right_second"
-                  onClick={handleToggle1}
-                >
-                  <p>{value.question}</p>
-                  {isShowing1 ? (
-                    <AiFillUpCircle size={32} />
-                  ) : (
-                    <AiFillDownCircle size={32} />
-                  )}
-                </div>
-
-                <div className="faqs-body__texts-right_third">
-                  {isShowing1 && <p>{value.answer}</p>}
-                </div>
-                <hr />
-              </div>
-            </div>
-          );
-        })}
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
