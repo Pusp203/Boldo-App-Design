@@ -32,6 +32,7 @@ const Cta = () => {
             placeholder="Your email address"
             value={email}
             onChange={handleChange}
+            autoComplete="off"
           />
           <button
             className="cta-body__buttons-startNowBtn"
