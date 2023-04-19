@@ -9,7 +9,7 @@ export const Data = [
       "Lorem ipsum dolor sit amet con sectetur adipisicing elit. sectetur adipisicing elit.",
   },
   {
-    id: 1,
+    id: 0,
 
     question: "We connect our customers with the best?",
     answer:

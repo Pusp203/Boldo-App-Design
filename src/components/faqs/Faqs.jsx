@@ -7,7 +7,6 @@ import { AiFillDownCircle, AiFillUpCircle } from "react-icons/ai";
 import { useState } from "react";
 const Faqs = () => {
   const [isShowing, setIsShowing] = useState(false);
-  const [isShowing1, setIsShowing1] = useState(false);
   const handleToggle = () => {
     setIsShowing((prev) => !prev);
   };

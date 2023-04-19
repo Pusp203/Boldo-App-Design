@@ -11,6 +11,9 @@ const Navbar = () => {
   const handleToggle = () => {
     setToggleMenu((prev) => !prev);
   };
+  const closeMenu = () => {
+    setToggleMenu(false);
+  };
   return (
     <div className="navbar">
       {/* <div className="navbar-ellipse">
@@ -31,13 +34,13 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="navbar-container__wrappper-links">
-            <Link to="/" className="items">
+            <Link to="/" className="items" onClick={closeMenu}>
               Home
             </Link>
-            <Link to="/about" className="items">
+            <Link to="/about" className="items" onClick={closeMenu}>
               About
             </Link>
-            <Link to="/blogs" className="items">
+            <Link to="/blogs" className="items" onClick={closeMenu}>
               Blogs
             </Link>
             <button className="primary-btn">Log In</button>
@@ -55,13 +58,13 @@ const Navbar = () => {
             {toggleMenu && (
               <div className="navbar-container__wrappper-hamburgurMenu_container">
                 <div className="navbar-container__wrappper-hamburgurMenu_container-links">
-                  <Link to="/" className="item">
+                  <Link to="/" className="item" onClick={closeMenu}>
                     Home
                   </Link>
-                  <Link to="/blogs" className="item">
+                  <Link to="/blogs" className="item" onClick={closeMenu}>
                     Blogs
                   </Link>
-                  <Link to="/about" className="item">
+                  <Link to="/about" className="item" onClick={closeMenu}>
                     About
                   </Link>
                   <button className="primary-btn">Log In</button>
