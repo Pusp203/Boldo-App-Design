@@ -8,10 +8,7 @@ import Heading from "./heading/Heading";
 const Blogs = () => {
   return (
     <div>
-      <Heading />
       <Featured />
-
-      <Article />
     </div>
   );
 };

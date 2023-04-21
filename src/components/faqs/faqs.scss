@@ -5,9 +5,18 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
+    padding-bottom: 100px;
 
     @media screen and (max-width: 1120px) {
       padding: 0px 15px;
+      gap: 32px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 50px 15px;
+      gap: 32px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 40px 15px;
       gap: 32px;
     }
 

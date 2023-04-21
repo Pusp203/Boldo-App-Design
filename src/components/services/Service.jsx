@@ -14,52 +14,58 @@ const Service = () => {
   };
   return (
     <div className="service">
-      <div className="service-cards">
-        <div className="service-cards__Card1">
-          <div className="service-cards__Card1-image">
-            <img src={coolLogo} alt="" />
-          </div>
-          <div
-            className="service-cards__Card1-text"
-            onClick={handleExploreClick}
-          >
-            <h6>Cool feature title</h6>
-            <p>Learning curve network effects return on investment.</p>
-            <div className="service-cards__Card1-text_explore">
-              <h2>Explore page </h2>
-              <AiOutlineArrowRight />
-            </div>
-          </div>
+      <div className="service-body">
+        <div className="service-body-text">
+          <p>Our Services</p>
+          <h2>Handshake infographic mass market crowdfunding iteration.</h2>
         </div>
-        <div className="service-cards__Card1">
-          <div className="service-cards__Card1-image">
-            <img src={feature} alt="" />
-          </div>
-          <div className="service-cards__Card1-text">
-            <h6>Even cooler feature</h6>
-            <p>Learning curve network effects return on investment.</p>
+        <div className="service-body-cards">
+          <div className="service-body-cards__Card1">
+            <div className="service-body-cards__Card1-image">
+              <img src={coolLogo} alt="" />
+            </div>
             <div
-              className="service-cards__Card1-text_explore"
+              className="service-body-cards__Card1-text"
               onClick={handleExploreClick}
             >
-              <h2>Explore page </h2>
-              <AiOutlineArrowRight />
+              <h6>Cool feature title</h6>
+              <p>Learning curve network effects return on investment.</p>
+              <div className="service-body-cards__Card1-text_explore">
+                <h2>Explore page </h2>
+                <AiOutlineArrowRight />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="service-cards__Card1">
-          <div className="service-cards__Card1-image">
-            <img src={title} alt="" />
+          <div className="service-body-cards__Card1">
+            <div className="service-body-cards__Card1-image">
+              <img src={feature} alt="" />
+            </div>
+            <div className="service-body-cards__Card1-text">
+              <h6>Even cooler feature</h6>
+              <p>Learning curve network effects return on investment.</p>
+              <div
+                className="service-body-cards__Card1-text_explore"
+                onClick={handleExploreClick}
+              >
+                <h2>Explore page </h2>
+                <AiOutlineArrowRight />
+              </div>
+            </div>
           </div>
-          <div className="service-cards__Card1-text">
-            <h6>Cool feature title</h6>
-            <p>Learning curve network effects return on investment.</p>
-            <div
-              className="service-cards__Card1-text_explore"
-              onClick={handleExploreClick}
-            >
-              <h2>Explore page </h2>
-              <AiOutlineArrowRight />
+          <div className="service-body-cards__Card1">
+            <div className="service-body-cards__Card1-image">
+              <img src={title} alt="" />
+            </div>
+            <div className="service-body-cards__Card1-text">
+              <h6>Cool feature title</h6>
+              <p>Learning curve network effects return on investment.</p>
+              <div
+                className="service-body-cards__Card1-text_explore"
+                onClick={handleExploreClick}
+              >
+                <h2>Explore page </h2>
+                <AiOutlineArrowRight />
+              </div>
             </div>
           </div>
         </div>

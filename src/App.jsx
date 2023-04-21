@@ -14,6 +14,9 @@ import Images from "./components/images/Images";
 import Rupal from "./Testimonial";
 import Testimonial from "./Testimonial";
 import Logo from "./components/logos/Logo";
+import Form from "./form/Form";
+import LoginForm from "./form/LoginForm";
+import Login from "./Login";
 function App() {
   return (
     <div className="app">
@@ -26,6 +29,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/logIn" element={<Login />} />
         </Routes>
 
         <Cta />

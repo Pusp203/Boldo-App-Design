@@ -2,7 +2,7 @@
   max-width: 1137px;
   margin: auto;
   &-body {
-    padding-top: 120px 0;
+    padding-bottom: 120px;
     display: flex;
     align-items: center;
     gap: 150px;
@@ -20,7 +20,7 @@
       // width: 85%;
     }
     @media screen and (max-width: 480px) {
-      padding: 0 15px;
+      padding: 30px 15px;
       gap: 26px;
       align-items: flex-start;
       flex-direction: column;
@@ -88,9 +88,10 @@
           flex-direction: column;
           align-items: flex-start;
           gap: 20px;
-          // width: 100%;
+          overflow: hidden;
+          width: 100%;
           @media screen and (max-width: 480px) {
-            width: 90%;
+            width: 100%;
           }
           &_top {
             padding: 16px 53px 16px 20px;

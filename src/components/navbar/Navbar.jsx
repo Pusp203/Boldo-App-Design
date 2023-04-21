@@ -43,7 +43,10 @@ const Navbar = () => {
             <Link to="/blogs" className="items" onClick={closeMenu}>
               Blogs
             </Link>
-            <button className="primary-btn">Log In</button>
+            <Link to="/logIn" onClick={closeMenu}>
+              {" "}
+              <button className="primary-btn">Log In</button>
+            </Link>
           </div>
           <div className="navbar-container__wrappper-hamburgurMenu">
             {toggleMenu ? (
@@ -67,7 +70,10 @@ const Navbar = () => {
                   <Link to="/about" className="item" onClick={closeMenu}>
                     About
                   </Link>
-                  <button className="primary-btn">Log In</button>
+                  <Link to="/logIn" onClick={closeMenu}>
+                    {" "}
+                    <button className="primary-btn">Log In</button>
+                  </Link>
                   <RiCloseLine
                     className="ri-closeline"
                     size={32}

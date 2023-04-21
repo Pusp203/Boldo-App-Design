@@ -17,10 +17,12 @@
     @media screen and (max-width: 768px) {
       padding: 60px 15px;
       gap: 30px;
+      margin-bottom: 40px;
     }
     @media screen and (max-width: 480px) {
       gap: 30px;
       padding: 30px 15px;
+      margin-bottom: 30px;
     }
 
     &__top {
@@ -96,11 +98,9 @@
       flex-direction: column;
       align-items: center;
       @media screen and (max-width: 768px) {
-        gap: 24px;
+        gap: 34px;
       }
-      @media screen and (max-width: 480px) {
-        gap: 18px;
-      }
+
       &-data {
         display: flex;
         align-items: flex-start;

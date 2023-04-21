@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 52px;
     @media screen and (max-width: 768px) {
-      padding: 24px 0;
+      padding: 24px 15px;
     }
     @media screen and (max-width: 480px) {
       padding: 48px 16px 64px 16px;
@@ -77,13 +77,14 @@
       @media screen and (max-width: 1020px) {
         // flex-direction: column;
         gap: 25px;
-        padding: 0 15px;
+        // padding: 0 15px;
       }
       @media screen and (max-width: 768px) {
         flex-direction: row;
         gap: 20px;
       }
       @media screen and (max-width: 480px) {
+        width: 100%;
         flex-direction: column;
         gap: 8px;
       }
@@ -135,8 +136,8 @@
               font-size: 20px;
             }
             @media screen and (max-width: 768px) {
-              font-size: 16px;
-              line-height: 16px;
+              font-size: 18px;
+              line-height: 20px;
             }
           }
           > h5 {

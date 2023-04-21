@@ -20,7 +20,7 @@ const Home = () => {
         <HeroSection />
         <Logo />
       </div>
-      <Heading />
+      {/* <Heading /> */}
       <Service />
       <FirstSection />
       <SecondSection />
