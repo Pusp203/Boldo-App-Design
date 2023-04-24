@@ -12,7 +12,7 @@ const LoginForm = () => {
   const [passwordError, setPasswordError] = useState("");
 
   const handleClose = () => {
-    navigate("/");
+    navigate("/navbar");
   };
 
   const handleUsernameChange = (event) => {

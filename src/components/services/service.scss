@@ -7,37 +7,33 @@
     flex-direction: column;
     gap: 80px;
     padding-top: 83px;
+    @media screen and (max-width: 1440px) {
+      padding: 60px 15px;
+      gap: 64px;
+    }
     @media screen and (max-width: 1040px) {
-      padding: 0 15px;
+      // padding: 0 15px;
       gap: 64px;
     }
     @media screen and (max-width: 768px) {
-      padding: 0 15px;
+      // padding: 0 15px;
       gap: 34px;
     }
-    @media screen and (max-width: 1040px) {
-      padding: 0 15px;
-      gap: 0px;
-    }
+
     &-cards {
       // display: flex;
       // align-items: center;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
       gap: 100px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
-      @media screen and (max-width: 1440px) {
-        padding: 0 15px;
-      }
       @media screen and (max-width: 1040px) {
-        padding: 0 15px;
         gap: 64px;
       }
 
       @media screen and (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 32px;
-        padding: 0 15px;
       }
       @media screen and (max-width: 480px) {
         grid-template-columns: repeat(1, 1fr);
@@ -53,14 +49,13 @@
         @media screen and (max-width: 768px) {
           gap: 8px;
         }
-        @media screen and (max-width: 480px) {
-          gap: 6px;
-        }
+
         &-image {
           > img {
-            width: 300px;
-            height: 354px;
-            aspect-ratio: 1;
+            object-fit: cover;
+            width: 100%;
+            aspect-ratio: 16/14;
+            height: auto;
             border-radius: 40px;
             @media screen and (max-width: 1060px) {
               border-radius: 34px;
@@ -169,16 +164,16 @@
       gap: 12px;
       flex-direction: column;
 
-      @media screen and (max-width: 1040px) {
-        padding: 64px 16px;
+      @media screen and (max-width: 1060px) {
+        padding: 64px 0;
         gap: 16px;
       }
       @media screen and (max-width: 768px) {
-        padding: 42px 15px;
+        padding: 42px 0;
         gap: 8px;
       }
       @media screen and (max-width: 480px) {
-        padding: 25px 0px;
+        padding: 25px 0;
         gap: 4px;
       }
 

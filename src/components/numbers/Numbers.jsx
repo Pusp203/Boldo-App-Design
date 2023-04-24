@@ -40,7 +40,7 @@ const Numbers = () => {
           <div className="numbers-body__bottom-left">
             <div>
               <div>
-                <CountUp start={100} end={120} duration={5} />
+                {inView && <CountUp start={0} end={120} duration={5} />}
                 <span className="numbers-body__bottom-left-meter">m</span>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Numbers = () => {
           </div>
           <div className="numbers-body__bottom-left">
             <div>
-              <CountUp start={9000} end={10000} duration={5} />
+              {inView && <CountUp start={0} end={10000} duration={5} />}
               <div className="numbers-body__bottom-left-text">
                 Cool feature title
               </div>
@@ -58,7 +58,7 @@ const Numbers = () => {
           </div>
           <div className="numbers-body__bottom-left">
             <div>
-              <CountUp start={220} end={240} duration={5} />
+              {inView && <CountUp start={0} end={240} duration={5} />}
               <div className="numbers-body__bottom-left-text">
                 Cool feature title
               </div>
