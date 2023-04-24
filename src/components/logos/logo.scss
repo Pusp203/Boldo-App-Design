@@ -13,10 +13,10 @@
   &-section {
     padding-bottom: 80px;
     @media screen and (max-width: 1060px) {
-      padding: 0px 15px;
+      padding: 0 15px 30px;
     }
     @media screen and (max-width: 480px) {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     > img {

@@ -16,7 +16,7 @@
       gap: 64px;
     }
     @media screen and (max-width: 768px) {
-      // padding: 0 15px;
+      padding: 30px 15px;
       gap: 34px;
     }
 
@@ -165,15 +165,12 @@
       flex-direction: column;
 
       @media screen and (max-width: 1060px) {
-        padding: 64px 0;
         gap: 16px;
       }
       @media screen and (max-width: 768px) {
-        padding: 42px 0;
         gap: 8px;
       }
       @media screen and (max-width: 480px) {
-        padding: 25px 0;
         gap: 4px;
       }
 
