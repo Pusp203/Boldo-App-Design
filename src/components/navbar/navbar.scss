@@ -21,7 +21,7 @@
       justify-content: space-between;
       padding: 50px 0 45px 0;
       @media screen and (max-width: 1024px) {
-        padding: 15px;
+        padding: 30px 15px;
       }
       &-logo {
         .logos {
@@ -56,7 +56,7 @@
           line-height: 28px;
           color: #ffffff;
           &:hover {
-            color: rgba(75, 15, 239, 0.74);
+            color: #777777;
           }
         }
         .primary-btn {
@@ -89,6 +89,12 @@
           left: 0;
           width: 100vw;
           height: 100vh;
+          position: absolute;
+          // background-color: whitesmoke;
+          // top: 0;
+          // right: 0;
+          // width: 60vw;
+          // height: 100vh;
           // padding: 30px;
           &-links {
             display: flex;
@@ -113,8 +119,10 @@
           }
           .ri-closeline {
             position: absolute;
-            top: 20px;
-            right: 15px;
+            top: 30px;
+            right: 50px;
+            // top: 28px;
+            // right: 20px;
           }
         }
       }

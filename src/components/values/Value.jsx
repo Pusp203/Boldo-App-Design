@@ -4,7 +4,7 @@ import { data } from "./Data";
 import "./value.scss";
 const Value = () => {
   return (
-    <div className="values">
+    <div className="values app__BannerWrapper">
       <div className="values-body">
         <div className="values-body__top">
           <div className="values-body__top-heading">

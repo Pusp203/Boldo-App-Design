@@ -51,7 +51,7 @@
         align-items: flex-start;
         flex-direction: column;
         gap: 22px;
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 990px) {
           gap: 10px;
         }
         &-headings {

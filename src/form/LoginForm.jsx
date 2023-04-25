@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./loginForm.scss";
 import line from "../assets/line.png";
 
 const LoginForm = () => {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const isLoginParam = queryParams.get("login") === "true";
+
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -12,8 +16,12 @@ const LoginForm = () => {
   const [passwordError, setPasswordError] = useState("");
 
   const handleClose = () => {
-    navigate("/navbar");
+    navigate("/");
   };
+  // if (!isLoginParam) {
+  //   navigate("/");
+  //   return null;
+  // }
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
