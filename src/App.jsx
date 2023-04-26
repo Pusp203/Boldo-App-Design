@@ -17,6 +17,8 @@ import Logo from "./components/logos/Logo";
 import Form from "./form/Form";
 import LoginForm from "./form/LoginForm";
 import Login from "./Login";
+import Error from "./Error";
+import Featured from "./components/featured/Featured";
 function App() {
   return (
     <div className="app">
@@ -24,14 +26,14 @@ function App() {
         <div className="app__BannerWrapper">
           <Navbar />
         </div>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/logIn" element={<LoginForm />} />
-        </Routes>
+          <Route path="/blogs/singlepage" element={<Featured />} />
 
+          <Route path="/*" element={<Error />} />
+        </Routes>
         <Cta />
         <Footer />
       </BrowserRouter>
@@ -40,19 +42,3 @@ function App() {
 }
 
 export default App;
-/**/
-
-{
-  /* <div className="app__BannerWrapper">
-        <HeroSection />
-         {/*      
-             <Numbers />
-           <Services /> 
-            <Products />
-               {/* <Ipl />
-        <Rupal /> **/
-}
-{
-  // <About />
-  // <Story />
-}

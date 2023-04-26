@@ -47,7 +47,7 @@ const Faqs = () => {
                       )}
                     </h4>
                   </div>
-                  <div>
+                  <div className="faqs-body__texts-right-top-answer">
                     {value.isShowing && <p>{value.answer}</p>}
                     <hr />
                   </div>

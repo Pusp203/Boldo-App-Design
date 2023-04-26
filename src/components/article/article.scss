@@ -30,6 +30,9 @@
       @media screen and (max-width: 1020px) {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
+        .blofs {
+          text-decoration: none;
+        }
       }
       @media screen and (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
@@ -49,7 +52,7 @@
         }
 
         &-image > img {
-          // width: 50%;
+          object-fit: cover;
           width: 300px;
           height: 209px;
           aspect-ratio: 1;

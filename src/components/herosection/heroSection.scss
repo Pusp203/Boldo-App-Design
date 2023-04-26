@@ -27,11 +27,11 @@
       width: 70%;
 
       @media screen and (max-width: 990px) {
-        width: 85%;
-        padding-top: 1rem;
+        width: 100%;
+        // padding-top: 1rem;
       }
       @media screen and (max-width: 480px) {
-        width: 95%;
+        width: 100%;
       }
       &-texts {
         > span {

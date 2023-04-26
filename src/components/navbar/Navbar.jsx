@@ -1,29 +1,36 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.png";
 import ellpse from "../../assets/ellpse.png";
 import "./navbar.scss";
-
+import LoginForm from "../../form/LoginForm";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(false);
+
   const handleToggle = () => {
     setToggleMenu((prev) => !prev);
   };
+
   const closeMenu = () => {
     setToggleMenu(false);
   };
+
+  // const handleLoginClick = () => {
+  //   // setShowLoginForm(true);
+  //   closeMenu();
+  // };
+
+  // const handleLoginFormClose = () => {
+  //   useEffect(() => {
+  //     setShowLoginForm((prev) => !prev);
+  //   }, []);
+  // };
+
   return (
     <div className="navbar">
-      {/* <div className="navbar-ellipse">
-        {" "}
-        <img src={ellipse} alt="" />{" "}
-      </div> */}
-      {/* <div className="navbar__bgimage">
-        <img src={ellpse} alt="" />
-      </div> */}
-
       <div className="navbar-container">
         <div className="navbar-container__wrappper">
           <div className="navbar-container__wrappper-logo">
@@ -42,11 +49,15 @@ const Navbar = () => {
             </Link>
             <Link to="/blogs" className="items" onClick={closeMenu}>
               Blogs
-            </Link>
-            <Link to="/logIn" onClick={closeMenu}>
-              {" "}
-              <button className="primary-btn">Log In</button>
-            </Link>
+            </Link>{" "}
+            <button
+              className="primary-btn"
+              onClick={() => {
+                setShowLoginForm(!showLoginForm);
+              }}
+            >
+              Log In
+            </button>
           </div>
           <div className="navbar-container__wrappper-hamburgurMenu">
             {toggleMenu ? (
@@ -69,11 +80,15 @@ const Navbar = () => {
                   </Link>
                   <Link to="/about" className="item" onClick={closeMenu}>
                     About
-                  </Link>
-                  <Link to="/logIn" onClick={closeMenu}>
-                    {" "}
-                    <button className="primary-btn">Log In</button>
-                  </Link>
+                  </Link>{" "}
+                  <button
+                    className="primary-btn "
+                    onClick={() => {
+                      setShowLoginForm(!showLoginForm);
+                    }}
+                  >
+                    Log In
+                  </button>
                   <RiCloseLine
                     className="ri-closeline"
                     size={32}
@@ -85,8 +100,8 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        {/* <div className="navbar-container__color"></div> */}
       </div>
+      {showLoginForm && <LoginForm />}
     </div>
   );
 };

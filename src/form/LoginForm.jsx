@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./loginForm.scss";
-import line from "../assets/line.png";
 
 const LoginForm = () => {
   const location = useLocation();
@@ -14,14 +13,18 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const [modal, setModal] = useState(true);
 
-  const handleClose = () => {
-    navigate("/");
-  };
   // if (!isLoginParam) {
   //   navigate("/");
   //   return null;
   // }
+  const handleClose = () => {
+    setModal(false);
+  };
+  if (!modal) {
+    return null;
+  }
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -112,8 +115,8 @@ const LoginForm = () => {
           </form>
         </div>
         <div>
-          <button className="close-btn" onClick={handleClose}>
-            <RiCloseLine size={40} />
+          <button className="close-btn">
+            <RiCloseLine size={40} onClick={handleClose} />
           </button>
         </div>
         {/* <div>
