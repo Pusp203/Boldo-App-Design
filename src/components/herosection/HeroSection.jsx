@@ -5,7 +5,7 @@ import ellpse from "../../assets/ellpse.png";
 
 const HeroSection = () => {
   return (
-    <section className="heroSection">
+    <section className="heroSection app__BannerWrapper">
       <div className="container">
         <div className="heroSection-division">
           <div className="heroSection-division__left">

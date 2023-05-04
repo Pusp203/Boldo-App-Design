@@ -18,19 +18,8 @@ const Navbar = () => {
     setToggleMenu(false);
   };
 
-  // const handleLoginClick = () => {
-  //   // setShowLoginForm(true);
-  //   closeMenu();
-  // };
-
-  // const handleLoginFormClose = () => {
-  //   useEffect(() => {
-  //     setShowLoginForm((prev) => !prev);
-  //   }, []);
-  // };
-
   return (
-    <div className="navbar">
+    <div className=" navbar">
       <div className="navbar-container">
         <div className="navbar-container__wrappper">
           <div className="navbar-container__wrappper-logo">
@@ -54,6 +43,7 @@ const Navbar = () => {
               className="primary-btn"
               onClick={() => {
                 setShowLoginForm(!showLoginForm);
+                closeMenu();
               }}
             >
               Log In
@@ -69,35 +59,43 @@ const Navbar = () => {
             ) : (
               <GiHamburgerMenu color="azure" size={32} onClick={handleToggle} />
             )}
-            {toggleMenu && (
-              <div className="navbar-container__wrappper-hamburgurMenu_container">
-                <div className="navbar-container__wrappper-hamburgurMenu_container-links">
-                  <Link to="/" className="item" onClick={closeMenu}>
-                    Home
-                  </Link>
-                  <Link to="/blogs" className="item" onClick={closeMenu}>
-                    Blogs
-                  </Link>
-                  <Link to="/about" className="item" onClick={closeMenu}>
-                    About
-                  </Link>{" "}
-                  <button
-                    className="primary-btn "
-                    onClick={() => {
-                      setShowLoginForm(!showLoginForm);
-                    }}
-                  >
-                    Log In
-                  </button>
-                  <RiCloseLine
-                    className="ri-closeline"
-                    size={32}
-                    color="black"
-                    onClick={handleToggle}
-                  />
-                </div>
+            {/* {toggleMenu && ( */}
+            <div
+              className={`navbar-container__wrappper-hamburgurMenu_container ${
+                toggleMenu ? "open" : ""
+              }`}
+            >
+              <div className="navbar-container__wrappper-hamburgurMenu_container-links">
+                <Link to="/" className="item" onClick={closeMenu}>
+                  Home
+                </Link>
+                <Link to="/blogs" className="item" onClick={closeMenu}>
+                  Blogs
+                </Link>
+                <Link to="/about" className="item" onClick={closeMenu}>
+                  About
+                </Link>{" "}
+                <button
+                  className="primary-btn "
+                  onClick={() => {
+                    setShowLoginForm(!showLoginForm);
+                    closeMenu();
+                  }}
+                >
+                  Log In
+                </button>
+                <RiCloseLine
+                  className="ri-closeline"
+                  size={32}
+                  color="white"
+                  onClick={handleToggle}
+                />
               </div>
-            )}
+            </div>
+            {/* <div
+              className="navbar-container__wrappper-hamburgurMenu-open "
+              onClick={handleToggle}
+            ></div> */}
           </div>
         </div>
       </div>

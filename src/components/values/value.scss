@@ -10,15 +10,22 @@
     justify-content: center;
     flex-direction: column;
     gap: 72px;
+    @media screen and (max-width: 1230px) {
+      gap: 48px;
+      padding: 80px 15px;
+    }
     @media screen and (max-width: 1020px) {
       gap: 48px;
+      padding: 80px 15px;
     }
     @media screen and (max-width: 768px) {
       gap: 30px;
       margin-bottom: 40px;
+      padding: 60px 15px;
     }
     @media screen and (max-width: 480px) {
       margin-bottom: 30px;
+      padding: 30px 15px;
     }
 
     &__top {

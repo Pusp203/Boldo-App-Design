@@ -62,7 +62,7 @@ const Logo = () => {
     ],
   };
   return (
-    <div className="logo">
+    <div className="logo app__BannerWrapper">
       <div className="logo-section">
         <Slider {...settings}>
           <div>

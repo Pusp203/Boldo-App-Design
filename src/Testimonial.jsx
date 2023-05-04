@@ -24,7 +24,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="testimonoals">
+    <div className="testimonoals ">
       <div className="testimonoals-division">
         <div className="testimonoals-division-header">
           <h1 className="testimonoals-division-header-heading">

@@ -1,4 +1,6 @@
 .navbar {
+  overflow-x: hidden;
+  // height: 50vh;
   &-container {
     position: relative;
     max-width: 1200px;
@@ -7,9 +9,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      // height: 80vh;
       padding: 50px 0 45px 0;
-      @media screen and (max-width: 1024px) {
-        padding: 30px 0px;
+      @media screen and (max-width: 1440px) {
+        padding: 30px 15px;
       }
       &-logo {
         .logos {
@@ -66,16 +69,23 @@
 
         @media screen and (max-width: 1024px) {
           display: block;
+
+          transition: all 0.5s ease;
         }
 
         &_container {
-          position: absolute;
-          background-color: whitesmoke;
+          position: fixed;
+          background-color: #0a2640;
           top: 0;
-          left: 0;
-          width: 100vw;
+          right: 0;
+          width: 60vw;
           height: 100vh;
-          position: absolute;
+
+          transition: all 0.5s ease;
+          transform: translateX(100%);
+          &.open {
+            transform: translateX(0);
+          }
 
           &-links {
             display: flex;
@@ -87,12 +97,13 @@
 
           .item {
             text-decoration: none;
-            color: #777777;
+            color: white;
+
             &:hover {
-              color: #777777;
+              color: white;
             }
             &:visited {
-              color: #777777;
+              color: white;
             }
           }
           .primary-btn {
@@ -104,11 +115,16 @@
             font-size: 16px;
             line-height: 24px;
             cursor: pointer;
+            @media screen and (max-width: 480px) {
+              padding: 12px 22px;
+              font-size: 12px;
+              border-radius: 25px;
+            }
           }
           .ri-closeline {
             position: absolute;
-            top: 30px;
-            right: 50px;
+            top: 28px;
+            right: 15px;
           }
         }
       }
